@@ -326,10 +326,15 @@ html:has(.bqh-panel:not([hidden])) .bq-peek,html.bqm-open .bq-bee,html:has(.bqh-
 <h2>İzlediğimiz standart</h2>
 <p><a href="https://www.w3.org/TR/WCAG22/" target="_blank" data-ext rel="noopener">Web İçeriği Erişilebilirlik Yönergeleri (WCAG) 2.2<span class="vh"> (yeni sekmede açılır)</span></a> AA düzeyini ve Apple ile Google’ın uygulama erişilebilirliği yönergelerini karşılamayı hedefliyoruz. Yeni özellikleri geliştirirken kontrol ediyor, sorunları bulur bulmaz düzeltiyoruz.</p>
 <h2>Her iki uygulamada</h2>
+<p>Beequation Kids ve Beequation Pro henüz uygulama mağazalarında değil. 1 Kasım 2026’da çıkıyorlar; bu bölüm, çıkışa hazırladığımız sürümleri anlatıyor.</p>
 <ul>
-<li><b>Ekran okuyucular:</b> iPhone ve iPad’de VoiceOver, Android’de TalkBack ile çalışır. Her yeni soru sesli okunur. Her altıgen sayısını ve konumunu söyler (örneğin “15, orta sıra, sol”) ve doğru ile yanlış yanıtlar bildirilir.</li>
-<li><b>Büyük metin:</b> metin, cihazınızın yazı boyutuna uyar; düğmeler sözcükleri kesmek yerine büyür.</li>
+<li><b>Ekran okuyucular:</b> iPhone ve iPad’de VoiceOver, Android’de TalkBack için tasarlandı. Her düğmenin bir etiketi var, her yeni soru sesli okunur, her altıgen sayısını ve konumunu söyler (örneğin “15, orta sıra, sol”) ve doğru ile yanlış yanıtlar bildirilir.</li>
+<li><b>Tüm sayıları oku:</b> tüm peteği sıra sıra sesli okuyan bir düğme.</li>
+<li><b>Sonuç satırı:</b> tahtanın altındaki bir metin satırı son mesajı saklar; böylece ekran okuyucu ve Braille ekran kullananlar geri dönüp mesajı tekrar okuyabilir.</li>
+<li><b>Dikey ve yatay:</b> uygulamalar telefonlarda ve tabletlerde her iki yönde de çalışır.</li>
+<li><b>Büyük metin:</b> metin, cihazınızın yazı boyutuna %200’e kadar ve daha fazlasına uyar; düğmeler sözcükleri kesmek yerine büyür.</li>
 <li><b>Kolay okunan yazı tipi:</b> cihazın kendi yazı tipini daha geniş harf aralıklarıyla kullanabilirsiniz. Bu, disleksisi olan bazı kişilerin okumasını kolaylaştırır.</li>
+<li><b>Sakin matematik:</b> seviyeler ve alıştırmalar için daha az altıgen, sayı doğrusu ipuçları sunan ve saat içermeyen bir ayar. Beequation Kids’te küçük sayılar ayrıca nokta resimleriyle gösterilir.</li>
 <li><b>Sesle ve anahtarla denetim:</b> düğmelerin adları görünen metinleriyle aynıdır ve her düğme en az 44 × 44 punto boyutundadır.</li>
 <li><b>Yalnızca renk değil:</b> doğru ve yanlış yanıtlar ile sonuçlar, renklerin yanında onay işaretleri, çarpılar, sayılar ve şekillerle gösterilir.</li>
 <li><b>Kontrast:</b> metin, açık ve koyu modda WCAG kontrast düzeylerini karşılar. Yüksek kontrast ayarı her oyuncunun renklerini ve kenar çizgilerini belirginleştirir.</li>
@@ -337,17 +342,25 @@ html:has(.bqh-panel:not([hidden])) .bq-peek,html.bqm-open .bq-bee,html:has(.bqh-
 <li><b>Koyu mod:</b> açık, koyu veya cihazınızla aynı.</li>
 <li><b>Hareketi azalt:</b> cihazınızda hareketi azaltma açıkken daha sakin animasyonlar otomatik olarak devreye girer.</li>
 <li><b>Ses gerekmez:</b> sesler ve müzik isteğe bağlıdır; hiçbir özellik bunları duymanızı gerektirmez.</li>
-<li><b>Hafif geri bildirim:</b> dokunuşlarda hafif titreşim, zor bulmacalarda ipuçları.</li>
+<li><b>Titreşim:</b> bir kısa titreşim doğru, iki kısa titreşim tekrar dene, bir uzun titreşim (iPhone’da daha güçlü bir darbe) turun bittiği anlamına gelir. Titreşim anahtarıyla kapatabilirsiniz.</li>
 </ul>
 <h2>Beequation Pro’da</h2>
 <ul>
 <li><b>Zamanlayıcı olmadan:</b> seviyelerde ve günlük bulmacada saati gizleyebilir, hız yerine doğru yanıtlara odaklanabilirsiniz. 60 saniyelik Blitz her zaman sürelidir ve bunu belirtir.</li>
+<li><b>Blitz’te süre bildirimleri:</b> kalan süre 30, 10 ve 5 saniyede sesli okunur.</li>
 </ul>
 <h2>Beequation Kids’te</h2>
 <ul>
 <li>Zamanlayıcı veya geri sayım yoktur; çocuklar ihtiyaç duydukları kadar zaman ayırabilir.</li>
 <li>Indie, okumayı yeni öğrenen çocuklar için soruları ve mesajlarını cihazınızın sesiyle okuyabilir.</li>
 <li>İlk oyundan önce kısa bir “Nasıl oynanır” anlatımı, kuralı resimlerle gösterir.</li>
+</ul>
+<h2>Tarayıcı oyununda</h2>
+<p><a href="/play.html">Tarayıcı oyununda</a> uygulamalardaki ekran okuyucu etiketleri, Tüm sayıları oku düğmesi, sonuç satırı, titreşim desenleri (destekleyen cihazlarda) ve Blitz süre bildirimleri aynen bulunur. Kids, seviyeler ve günlük bulmacalarda saat yoktur. Ayrıca şunlar da var:</p>
+<ul>
+<li><b>Klavyeyle oynama:</b> tahtaya girmek için Tab’a basın, altıgenler arasında ok tuşlarıyla gezinin ve birini seçmek için Enter’a veya Boşluk’a basın. Tüm sayıları okutmak için R’ye basın.</li>
+<li><b>Yatay düzenler:</b> telefon veya tablet yan çevrildiğinde tahta ve düğmeler yeniden yerleşir.</li>
+<li><b>Yardım:</b> oyunun, kontrolleri ve ayarları açıklayan kendi yardım bölümü vardır.</li>
 </ul>
 <h2>Sitenin erişilebilirlik ayarları</h2>
 <p>Üst bölümden veya telefon menüsünden Erişilebilirlik’i aç. %125 veya %150 yazı boyutu, disleksi dostu yazı tipi, daha fazla boşluk, yüksek karşıtlık veya animasyonları durdurmayı seçebilirsin. Değişiklikler hemen uygulanır. Sıfırla varsayılanları geri getirir. Cihazın daha az hareket isterse animasyonlar başlangıçta kapalıdır.</p>
@@ -359,21 +372,32 @@ html:has(.bqh-panel:not([hidden])) .bq-peek,html.bqm-open .bq-bee,html:has(.bqh-
 <li>Sayfalar klavyeyle kullanılabilir; görünür odak çerçevesi ve “İçeriğe geç” bağlantısı bulunur.</li>
 <li>Metin açık ve koyu modda WCAG kontrast düzeylerini karşılar. Sayfalar cihazınızın ayarına uyar.</li>
 <li>Görsellerin ve resimlerin metin alternatifleri vardır.</li>
+<li>Başka web sitelerine giden bağlantılar yeni sekmede açılır ve bunu ekran okuyuculara da bildirir.</li>
 <li>Uçan arı yalnızca süslemedir: ekran okuyuculardan gizlidir, ekranda beş saniyeden fazla kalmaz ve hareketi azaltma açıkken hiç görünmez.</li>
-<li>Tarayıcı oyununda uygulamalarla aynı etiketler ve ayarlar kullanılır.</li>
 </ul>
 <h2>Çalışma sayfaları ve yazdırılabilir materyaller</h2>
-<p>Her çalışma sayfası web sayfası, standart PDF, büyük yazılı PDF ve kolay okumaya uygun PDF olarak sunulur.</p>
-<p>PDF dosyalarımız etiketlidir ve bilgi içeren görseller için metin alternatifleri sunar.</p>
+<p>Her çalışma sayfası web sayfası olarak ve dört PDF olarak sunulur: standart, büyük yazılı, kolay okunur ve dokunsal (şişirilebilir kâğıt için).</p>
+<p>PDF dosyalarımız etiketlidir, bilgi içeren görseller için metin alternatifleri sunar ve PDF/UA erişilebilirlik standardına göre denetlenir.</p>
+<p>Çalışma sayfaları Japonca dışındaki tüm dillerde Braille dosyaları olarak da sunulur.</p>
 <p><a href="/learn/braille.html">Çalışma kâğıtları Braille ile</a></p>
+<h2>Nasıl test ediyoruz</h2>
+<ul>
+<li>Her İngilizce sayfada ve diğer dillerdeki sayfalardan örneklerde otomatik erişilebilirlik denetimleri (axe-core).</li>
+<li>Her PDF, veraPDF ile denetlenir.</li>
+<li>320 piksel genişliğindeki ekranlarda, %200 metinle ve ek metin aralığıyla düzen denetimleri.</li>
+<li>Uygulamanın her ekranı, normal yazı boyutunun 2 ve 3,2 katında, dikey ve yatay olarak çizilip denetlenir.</li>
+</ul>
 <h2>Bilinen sınırlamalar</h2>
 <ul>
-<li>Uygulamalar şimdilik yalnızca dikey yönde çalışır. Özellikle iPad’de yatay yönü desteklemeyi planlıyoruz.</li>
+<li>Uygulamaları henüz gerçek telefonlarda VoiceOver veya TalkBack ile ya da Braille ekranlarla test etmedik; web sitesini de henüz Windows’ta NVDA veya JAWS ile test etmedik.</li>
+<li>Görme engelli ve işitme-görme engelli test kullanıcıları arıyoruz. Yardım etmek isterseniz <a href="/support.html">destek sayfamızdan</a> bize ulaşın.</li>
+<li>Braille dosyalarımız bilgisayarla üretilir ve henüz düzeltmeden geçmedi.</li>
 <li>Site ve uygulamaların tüm çevirileri henüz ana dili o dil olan kişilerce incelenmedi.</li>
+<li>Bu web sitesinin Hintçe ve Hint İngilizcesi sürümleri yenidir.</li>
 </ul>
 <h2>Sorun bildirin</h2>
 <p>Bir şeyi kullanmakta zorlanıyorsanız veya farklı bir biçimde bilgiye ihtiyacınız varsa <a href="/support.html">destek sayfamızdan</a> bize yazın. İki iş günü içinde yanıt vermeyi hedefliyoruz; sorunu nasıl ve ne zaman çözeceğimizi açıklayacağız.</p>
-<p>Bu beyan en son 12 Ekim 2026 tarihinde gözden geçirildi.</p>
+<p>Bu beyan en son 13 Ekim 2026 tarihinde gözden geçirildi.</p>
 </div></main><!--footer--><div class="wrap"><footer class="bqf"><div class="bqf-card"><div class="bqf-brand"><a class="bqf-logo" href="/"><img src="/assets/hexabee.svg" width="44" height="44" alt="">Beequation</a><p class="bqf-tag">Diğer iki sayıdan oluşan sayıyı bulun.</p><a class="bqf-today" href="/today/"><i aria-hidden="true"></i>Günün bulmacası</a></div><nav class="bqf-cols" aria-label="Beequation"><div><p class="bqf-h">Oyna</p><ul><li><a href="/play.html">Çevrimiçi oynayın</a></li><li><a href="/how-to-play.html">Nasıl oynanır</a></li><li><a href="/today/">Günün bulmacası</a></li></ul></div><div><p class="bqf-h">Öğren</p><ul><li><a href="/learn/">Öğren ana sayfası</a></li><li><a href="/teachers.html">Öğretmenler için ücretsiz bulmaca paketi</a></li><li><a href="/blog/">Blog</a></li></ul></div><div><p class="bqf-h">Yardım ve bilgi</p><ul><li><a href="/about.html">Beequation hakkında</a></li><li><a href="/support.html">Destek</a></li><li><a href="/privacy.html">Gizlilik</a></li><li><a href="/terms.html">Koşullar</a></li><li><a href="/accessibility.html">Erişilebilirlik</a></li><li><a href="/easy-read/how-to-play.html">Kolay okuma</a></li></ul></div></nav><div class="bqf-social"><p class="bqf-h">Kovanı takip et</p><ul class="bqf-comb"><li><a href="https://www.instagram.com/beequationapp" target="_blank" rel="noopener" aria-label="Instagram (yeni sekmede açılır)" title="Instagram"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.3 6.7h.01"/></svg></a></li><li><a href="https://www.tiktok.com/@beequationapp" target="_blank" rel="noopener" aria-label="TikTok (yeni sekmede açılır)" title="TikTok"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3.5v11a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3.5c.4 2.6 2.3 4.4 5 4.6"/></svg></a></li><li><a href="https://www.youtube.com/@beequationapp" target="_blank" rel="noopener" aria-label="YouTube (yeni sekmede açılır)" title="YouTube"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.2 9.3v5.4l4.6-2.7z" fill="currentColor"/></svg></a></li><li><a href="https://www.twitch.tv/beequationapp" target="_blank" rel="noopener" aria-label="Twitch (yeni sekmede açılır)" title="Twitch"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 3.5h15v10l-4.5 4.5h-3.5l-3 3v-3H4.5z"/><path d="M11 8v4M15.5 8v4"/></svg></a></li><li><a href="https://www.facebook.com/beequationapp" target="_blank" rel="noopener" aria-label="Facebook (yeni sekmede açılır)" title="Facebook"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 3.5H14a4 4 0 0 0-4 4V10H7.5v3.5H10v7h3.5v-7h2.6l.6-3.5h-3.2V8a1 1 0 0 1 1-1h1z"/></svg></a></li><li><a href="https://www.linkedin.com/company/beequationapp" target="_blank" rel="noopener" aria-label="LinkedIn (yeni sekmede açılır)" title="LinkedIn"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3.5"/><path d="M7.8 10.5v6M7.8 7.4h.01M11.5 16.5v-6M11.5 13.2c0-1.6 1-2.8 2.5-2.8s2.3 1 2.3 2.7v3.4"/></svg></a></li><li><a href="https://x.com/beequationapp" target="_blank" rel="noopener" aria-label="X (yeni sekmede açılır)" title="X"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4.2l11.8 16h-4.2z"/><path d="M19.6 4l-6.6 7.3M4.4 20l6.6-7.3"/></svg></a></li><li><a href="https://bsky.app/profile/did:plc:v7vs5upct4ovtvhrjaq3fzgx" target="_blank" rel="noopener" aria-label="Bluesky (yeni sekmede açılır)" title="Bluesky"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 11.3C10.5 8.3 6.9 4.5 4.8 4.5 3.6 4.5 3 5.3 3 6.7c0 1.2.6 4.4 1.4 5.3 1.2 1.3 3.3 1.3 4.6 1-2.4.8-3.6 2.3-2.2 4 1.7 2 3.8 1 5.2-1.9 1.4 2.9 3.5 3.9 5.2 1.9 1.4-1.7.2-3.2-2.2-4 1.3.3 3.4.3 4.6-1 .8-.9 1.4-4.1 1.4-5.3 0-1.4-.6-2.2-1.8-2.2-2.1 0-5.7 3.8-7.2 6.8z"/></svg></a></li><li><a href="https://www.threads.com/@beequationapp" target="_blank" rel="noopener" aria-label="Threads (yeni sekmede açılır)" title="Threads"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.6"/><path d="M15.6 9v4.2a2.6 2.6 0 0 0 5.2 0V12a8.8 8.8 0 1 0-3.4 6.9"/></svg></a></li><li><a href="https://www.pinterest.com/beequationapp/" target="_blank" rel="noopener" aria-label="Pinterest (yeni sekmede açılır)" title="Pinterest"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 20.6l2.2-9"/><path d="M11 15.6c3 .8 5.6-1.3 5.6-4.3 0-2.6-2.1-4.4-4.7-4.4-3 0-5 2.1-5 4.6 0 1.1.4 2 1.1 2.6"/></svg></a></li></ul><img class="bqf-bee" src="/assets/hexabee.svg" width="46" height="46" alt="" loading="lazy"></div></div><p class="bqf-legal">Beequation, İngiltere ve Galler’de 17310137 şirket numarasıyla kayıtlı Trett Labs Limited tarafından geliştirilmektedir. Kayıtlı adres: The 1812 Building, Wheatley Park, Mirfield, West Yorkshire, WF14 8HE, United Kingdom. İletişim: <a href="/support.html">destek sayfası</a>. © 2026 Trett Labs Limited.</p></footer></div><!--/footer-->
 <!--nav--><script>// Measure the full, unwrapped pill, including font/spacing preferences and translated labels.
 window.bqHeaderFits=function(h){
