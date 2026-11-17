@@ -41,7 +41,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Beequation: Diğer iki sayıdan oluşan sayıyı bulun. 14 + 6 = 20 gibi işlemlerin saklandığı bir petek bulmacası.">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Beequation (play online)","url":"https://tr.beequation.com/play.html","applicationCategory":"EducationalApplication","genre":"Puzzle","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"inLanguage":"tr","image":"https://beequation.com/assets/og-image.png","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"publisher":{"@id":"https://beequation.com/#org"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Beequation (play online)","url":"https://tr.beequation.com/play.html","applicationCategory":"EducationalApplication","genre":"Puzzle","operatingSystem":"Any (web browser)","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"inLanguage":"tr","image":"https://beequation.com/assets/og-image.png","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"publisher":{"@id":"https://beequation.com/#org"},"isRelatedTo":[{"@type":"SoftwareApplication","name":"Beequation Kids","downloadUrl":["https://play.google.com/store/apps/details?id=com.trettlabs.beequationkids"]},{"@type":"SoftwareApplication","name":"Beequation Pro","downloadUrl":["https://apps.apple.com/app/id6824660502","https://play.google.com/store/apps/details?id=com.trettlabs.beequation"]}]}</script>
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
@@ -391,7 +391,7 @@ a.candy { text-decoration: none; text-align: center; }
   kFree: free =>
       `Ücretsiz sürümde ${free} seviye ve günün bulmacası var. Abone olun ya da ömür boyu erişimi bir kez satın alın; altı dünyanın tüm seviyeleri açılsın: daha zor toplama işlemleri, 20’ye kadar çarpım tablosu, kesirler, onluklar ve yüzlükler, ondalık sayılar ve Büyük Kovan.`,
   kPrice: 'Fiyatlar ayda 4,99 £ ile başlar; ilk 7 gün ücretsiz. Reklam yok. Veri toplanmaz. İstediğiniz zaman iptal edin.', backToFree: 'Ücretsiz sürüme dön (yalnızca önizleme)',
-  kBuy: 'Tam sürümün kilidini açın', previewNote: 'Bu önizlemede gerçek bir satın alma yapılmaz. Uygulamada bu düğmeyle App Store ya da Google Play açılır.', helpsTitle: 'Nasıl yardımcı olur?',
+  kBuy: 'Tam sürümün kilidini açın', previewNote: "Bu tarayıcı demosunda satın alma işlemleri simüle edilir. Gerçek satın alma işlemleri için uygulamayı indirin.", helpsTitle: 'Nasıl yardımcı olur?',
   helps: 'Her bulmacada çocuğunuz, diğer iki sayıdan oluşan sayıyı bulur. Bu da sayılar arasındaki ilişkileri görmesini ve zihinden işlem becerisini geliştirir. Indie’nin ipuçları ortamı sakin tutar; yıldızlar ipuçlarını ve hataları nazikçe hesaba katar ve yarışılacak bir saat yoktur.',
   progress: 'İlerleme', reset: 'İlerlemeyi sıfırla', resetAsk: 'Bu cihazdaki yıldızlar ve çıkartmalar silinsin mi?', resetDone: 'İlerleme sıfırlandı',
   // Beequation Pro (the player is addressed with "sen", as in the app)
@@ -1730,6 +1730,9 @@ function k_stickers() {
   on('[data-back]', back);
 }
 
+/*launch:stores*/
+const LAUNCH_STORES = {"kids": "<a href=\"https://play.google.com/store/apps/details?id=com.trettlabs.beequationkids\" data-app=\"kids\">Google Play</a>", "pro": "<a href=\"https://apps.apple.com/app/id6824660502\" data-app=\"pro\">App Store</a> · <a href=\"https://play.google.com/store/apps/details?id=com.trettlabs.beequation\" data-app=\"pro\">Google Play</a>"};
+/*/launch:stores*/
 function k_grown() {
   const total = WORLDS.reduce((n, w) => n + w.tiers, 0), free = WORLDS.reduce((n, w) => n + w.free, 0), last = kidsRound(K.last);
   h(`<div class="stack screen-columns"><div class="screen-column">${kTop(T.forGrown)}
@@ -1737,7 +1740,7 @@ function k_grown() {
       <p style="font-size:16px;line-height:1.45;font-weight:500">${K.full ? T.kThanks : T.kFree(free)}</p>
       <p style="font-size:16px;font-weight:500">${T.kPrice}</p>
       ${K.full ? `<button class="candy mid" style="--c:#EAF6FF;--l:#C7DDF0;color:#1C1A4A" data-lock>${T.backToFree}</button>` : `<button class="candy mid k-grape" data-buy>${T.kBuy}</button>`}
-      <p class="soft" style="font-size:13px">${T.previewNote}</p></div>
+      <!--launch:play-kids--><p class="soft" style="font-size:13px">${T.previewNote}</p><div class="launch-stores">${LAUNCH_STORES.kids}</div><!--/launch:play-kids--></div>
     </div><div class="screen-column">
     <div class="card-k stack"><h2 style="font-size:22px">${T.helpsTitle}</h2><p style="font-size:16px;line-height:1.45;font-weight:500">${T.helps}</p></div>
     ${familyCard()}
@@ -2005,7 +2008,7 @@ function a_settings() {
       <p style="font-size:16px;line-height:1.45">${P.full ? T.aThanks : T.aFree(free)}</p>
       <p class="mute">${T.aPrice}</p>
       ${P.full ? `<button class="btn b-plain" style="background:var(--a-ground)" data-lock>${T.backToFree}</button>` : `<button class="btn b-cobalt" data-buy>${T.aBuy}</button>`}
-      <p class="mute" style="font-size:13px">${T.previewNote}</p></div>
+      <!--launch:play-pro--><p class="mute" style="font-size:13px">${T.previewNote}</p><div class="launch-stores">${LAUNCH_STORES.pro}</div><!--/launch:play-pro--></div>
     </div><div class="screen-column">
     <div class="card-a"><h2 style="font-size:18px">${T.howTitle}</h2><p style="font-size:16px;line-height:1.45">${T.how}</p><h3 style="font-size:16px;margin:14px 0 4px">${T.jarTitle}</h3><p style="font-size:16px;line-height:1.45">${T.jarHelp}</p>${gameHelp()}</div>
   </div></div>`);
